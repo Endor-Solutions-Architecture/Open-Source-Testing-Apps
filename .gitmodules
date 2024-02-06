@@ -76,3 +76,24 @@
 [submodule "Ruby/simple_form"]
 	path = Ruby/simple_form
 	url = https://github.com/heartcombo/simple_form
+[submodule "Ruby/maybe"]
+	path = Ruby/maybe
+	url = https://github.com/maybe-finance/maybe
+[submodule "Kotlin/chains"]
+	path = Kotlin/chains
+	url = https://github.com/ethereum-lists/chains
+[submodule "Kotlin/okhttp"]
+	path = Kotlin/okhttp
+	url = https://github.com/square/okhttp
+[submodule "Kotlin/thumb-key"]
+	path = Kotlin/thumb-key
+	url = https://github.com/dessalines/thumb-key
+[submodule "Kotlin/Exposed"]
+	path = Kotlin/Exposed
+	url = https://github.com/JetBrains/Exposed
+[submodule "Kotlin/revanced-patches"]
+	path = Kotlin/revanced-patches
+	url = https://github.com/ReVanced/revanced-patches
+[submodule "Kotlin/Shizuku"]
+	path = Kotlin/Shizuku
+	url = https://github.com/RikkaApps/Shizuku
