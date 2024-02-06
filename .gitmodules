@@ -49,3 +49,9 @@
 [submodule "Java/Maven/jenkins"]
 	path = Java/Maven/jenkins
 	url = https://github.com/jenkinsci/jenkins
+[submodule "Java/Gradle/termux-app"]
+	path = Java/Gradle/termux-app
+	url = https://github.com/termux/termux-app
+[submodule "Java/Gradle/conductor"]
+	path = Java/Gradle/conductor
+	url = https://github.com/conductor-oss/conductor
