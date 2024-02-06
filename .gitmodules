@@ -64,3 +64,15 @@
 [submodule "PHP/Twig"]
 	path = PHP/Twig
 	url = https://github.com/twigphp/Twig
+[submodule "Go/packer-plugin-amazon"]
+	path = Go/packer-plugin-amazon
+	url = https://github.com/hashicorp/packer-plugin-amazon
+[submodule "JavaScript/npm/homepage"]
+	path = JavaScript/npm/homepage
+	url = https://github.com/gethomepage/homepage
+[submodule "Scala/delta-sharing"]
+	path = Scala/delta-sharing
+	url = https://github.com/delta-io/delta-sharing
+[submodule "Ruby/simple_form"]
+	path = Ruby/simple_form
+	url = https://github.com/heartcombo/simple_form
