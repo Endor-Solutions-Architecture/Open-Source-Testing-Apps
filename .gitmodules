@@ -1,0 +1,3 @@
+[submodule "Java/Maven/hearts-github"]
+	path = Java/Maven/hearts-github
+	url = https://github.com/endorlabs/hearts-github
