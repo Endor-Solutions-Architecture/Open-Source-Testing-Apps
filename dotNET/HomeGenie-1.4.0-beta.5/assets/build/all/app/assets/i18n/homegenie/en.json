@@ -1,0 +1,365 @@
+{
+" ": "--------------- SETUP WIZ -----------------",
+    "welcome_to_homegenie":
+        "Welcome to HomeGenie!",
+    "welcome_subtitle":
+        "The programmable automation system",
+    "not_configured_yet":
+        "System is not configured yet. This setup wizard will help you in getting your system up and running in a few steps.",
+    "system_config_start_with_base_and_backup":
+        "Restore from backup file",
+    "system_config_start_with_default_setup":
+        "Default setup",
+    "system_config_include_demo":
+        "Include demo with simulated device activity",
+    "system_config_additional_features":
+        "Additional features",
+    "system_config_manual_setup":
+        "Manual setup",
+" ": "-------------- INTERFACES ----------------",
+    "interfaces":
+        "Interfaces",
+    "Protocols.UPnP":
+        "UPnP controller",
+    "HomeAutomation.X10":
+        "X10 controller",
+    "HomeAutomation.ZWave":
+        "Z-Wave controller",
+    "HomeAutomation.ZigBee":
+        "ZigBee controller",
+    "device_port":
+        "Device port",
+" ":"--------------- PROGRAMS ------------------",
+    "programs":
+        "Programs",
+    "repositories":
+        "Repositories",
+    "packages":
+        "Packages",
+    "installed_packages":
+        "Installed packages",
+    "upload_package":
+        "Upload package",
+    "create_package":
+        "Create new package",
+    "programs_version":
+        "Programs version",
+" ":"---------- MAINTENANCE -------------",
+    "http_settings":
+        "HTTP settings",
+" ":"---------- MODULES AND GROUPS -------------",
+    "modules_groups":
+        "Groups and modules",
+    "groups":
+      "Groups",
+    "add_group":
+      "Add group",
+    "edit_group":
+      "Edit group",
+    "delete_group":
+      "Delete group",
+    "dashboard_from_group":
+      "Create a dashboard from this group",
+    "group_modules":
+      "Modules in this group",
+    "modules":
+        "Modules",
+    "empty_group":
+        "No modules in this group.",
+" ":"---------- SCHEDULER -------------",
+    "scheduler_wizard":
+        "Scheduler Wizard",
+    "schedule_event":
+        "Event",
+    "schedule_action":
+        "Action",
+    "schedule_occurrence_preview":
+        "Occurrence preview",
+    "time_schedule":
+        "Schedule",
+    "occurrence":
+        "Occurrence",
+    "cronwizard_description_on":
+        "on",
+    "cronwizard_description_from":
+        "from",
+    "cronwizard_description_to":
+        "to",
+    "cronwizard_description_starting":
+        "from",
+    "cronwizard_description_ending":
+        "to",
+    "cronwizard_description_at":
+        "at",
+    "cronwizard_add_time_slot":
+        "Add time slot",
+    "cronwizard_add_exact_time":
+        "Add exact time",
+    "cronwizard_start_time":
+        "Start time",
+    "cronwizard_end_time":
+        "End time",
+    "cronwizard_minutes":
+        "Minutes",
+    "cronwizard_hours":
+        "Hours",
+    "cronwizard_days":
+        "Days",
+    "cronwizard_months":
+        "Months",
+    "cronwizard_minuteselect_everyminute":
+        "Every minute",
+    "cronwizard_minuteselect_everynthminute":
+        "Every <n> minutes",
+    "cronwizard_minuteselect_selectedminutes":
+        "Selected minutes",
+    "cronwizard_hourselect_everyhour":
+        "Every hour",
+    "cronwizard_hourselect_everynthhour":
+        "Every <n> hours",
+    "cronwizard_hourselect_selectedhours":
+        "Selected hours",
+    "cronwizard_dayselect_everyday":
+        "Every day",
+    "cronwizard_dayselect_selecteddays":
+        "Selected days",
+    "cronwizard_dayowselect_selecteddaysow":
+        "Selected days of week",
+    "cronwizard_monthselect_everymonth":
+        "Every month",
+    "cronwizard_monthselect_selectedmonths":
+        "Selected months",
+    "cronwizard_bindings_define_types_and_modules":
+        "Define types and modules that are subject to this schedule (optional)",
+    "cronwizard_bindings_select_types":
+        "Select types",
+    "cronwizard_action_set_action_to_execute":
+        "Set action to execute on occurrences of this event",
+    "cronwizard_action_preset_actions":
+        "Preset actions",
+    "cronwizard_action_preset_every_occurrence":
+        "On every occurrence",
+    "cronwizard_action_preset_slot_start":
+        "At start of a time slot",
+    "cronwizard_action_preset_slot_end":
+        "At end of a time slot",
+    "cronwizard_action_custom_script":
+        "Custom action script",
+    "cronwizard_action_no_action":
+        "No action",
+    "cronwizard_action_schedule_variable_hint":
+        "Use <span class=\"color-primary\">@{{name}}</span> as a variable in cron expressions or use <span class=\"color-primary\">Scheduler.IsScheduling(\"@{{name}}\")</span> in automation programs to reference this event.",
+" ":"--------------- PROGRAM EDITOR ------------------",
+  "save_and_build":
+    "Save and build",
+  "toggle_widgets_preview":
+    "Toggle widgets preview",
+  "stop_program":
+    "Stop program",
+  "run_program":
+    "Run program",
+  "program_status_added":
+    "Added",
+  "program_status_idle":
+    "Idle",
+  "program_status_running":
+    "Running",
+  "program_status_background":
+    "Background",
+  "program_status_stopped":
+    "Stopped",
+  "program_status_disabled":
+    "Disabled",
+  "program_status_enabled":
+    "Enabled",
+  "automation_programming_guide":
+    "Programming guide'",
+  "tap_to_disable":
+    "Tap to disable",
+  "tap_to_enable":
+    "Tap to enable",
+  "program_data":
+    "Program data",
+  "visual_code":
+    "Visual code",
+  "generated_code":
+    "Generated code",
+  "setup_code":
+    "Setup",
+  "main_code":
+    "Main",
+  "main_code_empty_note":
+    "\"Main\" code is empty.\n\nUse the \"Visual code\" editor to generate this code:\n- Open the category \"Program\" from the command palette on the left\n- Drag a block of type \"Main\" in the visual code workspace\n- Add inside it other code blocks to implement actions and logic of this program\n\nThe program \"Main\" can be either run manually or auto-started based on conditions eventually given in the Setup code.",
+  "setup_code_empty_note":
+    "\"Setup\" code is empty.\n\nUse the \"Visual code\" editor to generate this code:\n- Open the category \"Program\" from the command palette on the left\n- Drag a block of type \"Setup\" in the visual code workspace\n- Add inside it other code blocks to determine the conditions that will trigger \"Main\" code execution\n\nThis code gets evaluated everytime a new event occurs and at least once a minute.",
+" ": "------------------------------------------",
+  "$options": {
+
+    "6": {
+        "Title": "All lights on",
+        "Description": "Turn on all lights in the given group."
+    },
+
+    "7": {
+        "Title": "All lights off",
+        "Description": "Turn off all lights in the given group."
+    },
+
+    "16": {
+      "Title":
+      "Level Memory",
+      "Description":
+      "Store and recall last dimmer level.",
+      "HomeGenie.LevelMemory":
+      "Recall last light level when switched on",
+      "HomeGenie.LevelMemory.SimulateOnly":
+      "Simulate only"
+    },
+
+    "34": {
+      "Title":
+      "OpenWeatherMap",
+      "Description":
+      "Weather and forecast information from Open Weather Map service.\nTo activate this widget enter a valid API key.\nFollow instructions at https://openweathermap.org/appid to get a free API key.",
+      "ConfigureOptions.Location":
+      "City name",
+      "ConfigureOptions.Language":
+      "Language (eg. EN, IT, FR, DE, ...)",
+      "ConfigureOptions.UpdateInterval":
+      "Update interval (minutes)",
+      "ConfigureOptions.ApiKey":
+      "OpenWeatherMap API key (APPID)"
+    },
+
+    "78": {
+      "Title": "Smart Thermostat",
+      "Description": "Use any temperature sensor and smart switch to implement thermostat functionality.",
+      "VirtualThermostat.TemperatureModule": "Temperature sensor",
+      "VirtualThermostat.HeatingSwitchModule": "Heating switch",
+      "VirtualThermostat.CoolingSwitchModule": "Cooling switch",
+      "ConfigureOptions.ThermostatsCount": "Number of thermostats"
+    },
+
+    "81": {
+        "Title":
+            "Energy Monitor",
+        "Description":
+            "Generate statistics on energy consumption and usage of devices.",
+        "EnergyManagement.MonitorStatus":
+            "Monitor status",
+        "EnergyManagement.MonitorWatts":
+            "Monitor energy consumption"
+    },
+
+    "82": {
+        "Title":
+            "Energy Saving Mode",
+        "Description":
+            "Keep the light level below a configurable percentage.",
+        "EnergyManagement.EnergySavingLevel":
+            "Max light level (%)",
+        "EnergyManagement.EnergySavingMode":
+            "Enable"
+    },
+
+    "90": {
+        "Title":
+            "Security Alarm System",
+        "Description":
+            "",
+        "HomeGenie.SecurityAlarm":
+            "Use as alarm/strobe",
+        "HomeGenie.SecuritySensor":
+            "Use as security sensor",
+        "ConfigureOptions.Email.Recipients":
+            "Comma separated list of recipients e-mails for alarm notifications",
+        "ConfigureOptions.System.ArmDelay":
+            "Arm delay (seconds)",
+        "ConfigureOptions.System.SirenStartTime":
+            "Sirens Start Delay (seconds)",
+        "ConfigureOptions.System.SirenMaxTime":
+            "Sirens max Time (seconds, 0=infinite)",
+        "ConfigureOptions.Trigger.ArmedProgram":
+            "Program to run when armed",
+        "ConfigureOptions.Trigger.DisarmedProgram":
+            "Program to run when disarmed",
+        "ConfigureOptions.Trigger.TriggeredProgram":
+            "Program to run when triggered"
+    },
+
+    "95": {
+      "Title": "Events logging",
+      "Description": "Record device activity.",
+      "EventsLogger.EnableLogging": "Enable"
+    },
+
+    "400": {
+      "Title": "Virtual Modules Demo",
+      "Description": "Manually set values of the virtual device.",
+      "Sensor.Temperature": "Temperature value",
+      "Sensor.Luminance": "Luminance value",
+      "Sensor.MotionDetect": "Motion detection status",
+      "Status.Battery": "Battery level",
+      "Sensor.DoorWindow": "Door/Window sensor status (open/closed)",
+      "Status.Level": "Switch status (on/off)"
+    },
+
+    "401": {
+      "Title": "Demo - Toggle Door",
+      "Description": "Simulates door open/closed of demo door-window sensor."
+    },
+
+    "402": {
+      "Title": "Demo - Motion Detected",
+      "Description": "Simulates motion detection of demo multi-sensor."
+    },
+
+    "410": {
+      "Title": "Sensor simulator",
+      "Description": "Emit random sensor values.",
+      "Simulator.Sensor.Temperature": "Temperature sensor",
+      "Simulator.Sensor.Humidity": "Humidity sensor",
+      "Simulator.Sensor.Luminance": "Light sensor",
+      "Simulator.Meter.Watts": "Watts meter",
+      "Simulator.Meter.Watts.Max": "Max Watt power",
+      "Simulator.Sensor.DataFrequency": "Simulator emit frequency"
+    },
+
+    "505": {
+      "Title": "Remote Control",
+      "Description": "Control the device using a remote (IR or RF).",
+      "HomeGenie.RemoteControl.Enable": "Enable",
+      "HomeGenie.RemoteControl.IRCode": "Toggle button",
+      "ConfigureOptions.DimmerUpCode": "Brighter button",
+      "ConfigureOptions.DimmerDownCode": "Dimmer button",
+      "ConfigureOptions.DimmerInterval": "Bright/Dim step"
+    },
+
+    "145": {
+        "Title":
+            "Smart Device",
+        "Description":
+            "Turn on/off the device based on motion detection and ambient light.",
+        "HomeGenie.SmartLights.Enable":
+            "Enable 'Smart Device'",
+        "HomeGenie.SmartLights.OnMotionDetect":
+            "Controlled by motion sensor (optional)",
+        "HomeGenie.SmartLights.CheckLuminosity":
+            "Controlled by light sensor (optional)",
+        "HomeGenie.SmartLights.SwitchOffTimeout":
+            "Turn off after inactivity timeout (seconds)",
+        "HomeGenie.SmartLights.MinLuminance":
+            "Turn on if luminance is below:"
+    },
+
+    "8": {
+        "Title":
+            "Sunrise Colors Scenario",
+        "Description":
+            "Example \"Sunrise\" scenario for color changing LED lights.",
+        "Scenarios.SunriseColors":
+            "Link to Sunrise Colors scenario"
+    }
+
+  }
+}

@@ -1,0 +1,370 @@
+{
+" ": "--------------- SETUP WIZ -----------------",
+    "welcome_to_homegenie":
+        "Benvenuto in HomeGenie!",
+    "welcome_subtitle":
+        "The programmable automation system.",
+    "not_configured_yet":
+        "Il sistema non è ancora configurato. Questa procedura di installazione guidata ti aiuterà a configurarlo in pochi passaggi.",
+    "system_config_start_with_base_and_backup":
+        "Rispristino da un file di backup",
+    "system_config_start_with_default_setup":
+        "Configurazione predefinita",
+    "system_config_include_demo":
+      "Includi demo con attività dispositivi simulata",
+    "system_config_additional_features":
+        "Funzionalità aggiuntive",
+    "system_config_manual_setup":
+        "Configurazione manuale",
+" ": "-------------- INTERFACES ----------------",
+    "interfaces":
+        "Interfacce",
+    "Protocols.UPnP":
+        "Controller UPnP",
+    "HomeAutomation.X10":
+        "Controller X10 (CM15, CM11, CM19)",
+    "HomeAutomation.ZWave":
+        "Controller Z-Wave",
+    "HomeAutomation.ZigBee":
+        "Controller ZigBee",
+    "device_port":
+        "Porta dispositivo",
+" ":"--------------- PROGRAMS ------------------",
+    "programs":
+        "Programmi",
+    "repositories":
+      "Repository",
+    "packages":
+        "Pacchetti",
+    "installed_packages":
+        "Pacchetti installati",
+    "upload_package":
+        "Carica pacchetto",
+    "create_package":
+        "Crea nuovo pacchetto",
+    "programs_version":
+        "Versione programmi",
+" ":"---------- MAINTENANCE -------------",
+    "http_settings":
+        "Impostazioni HTTP",
+" ":"---------- MODULES AND GROUPS -------------",
+    "modules_groups":
+        "Gruppi e moduli",
+    "groups":
+        "Gruppi",
+    "add_group":
+      "Aggiungi gruppo",
+    "edit_group":
+      "Modifica gruppo",
+    "delete_group":
+      "Rimuovi group",
+    "dashboard_from_group":
+      "Crea una dashboard da questo gruppo",
+    "group_modules":
+      "Moduli in questo gruppo",
+    "modules":
+        "Moduli",
+    "empty_group":
+        "Non ci sono moduli in questo gruppo.",
+" ":"---------- SCHEDULER -------------",
+    "scheduler_wizard":
+        "Scheduler Wizard",
+    "schedule_event":
+        "Evento",
+    "schedule_action":
+        "Azione",
+    "schedule_occurrence_preview":
+        "Anteprima occorrenza",
+    "time_schedule":
+        "Orario",
+    "occurrence":
+        "Occorrenza",
+    "cronwizard_description_on":
+        "il",
+    "cronwizard_description_from":
+        "dal",
+    "cronwizard_description_to":
+        "al",
+    "cronwizard_description_starting":
+        "dalle",
+    "cronwizard_description_ending":
+        "fino alle",
+    "cronwizard_description_at":
+        "alle",
+    "cronwizard_add_time_slot":
+        "Aggiungi fascia oraria",
+    "cronwizard_add_exact_time":
+        "Aggiungi ora esatta",
+    "cronwizard_start_time":
+        "Ora inizio",
+    "cronwizard_end_time":
+        "Ora fine",
+    "cronwizard_minutes":
+        "Minuti",
+    "cronwizard_hours":
+        "Ore",
+    "cronwizard_days":
+        "Giorni",
+    "cronwizard_months":
+        "Mesi",
+    "cronwizard_minuteselect_everyminute":
+        "Ogni minuto",
+    "cronwizard_minuteselect_everynthminute":
+        "Ogni <n> minuti",
+    "cronwizard_minuteselect_selectedminutes":
+        "Minuti selezionati",
+    "cronwizard_hourselect_everyhour":
+        "Ogni ora",
+    "cronwizard_hourselect_everynthhour":
+        "Ogni <n> ore",
+    "cronwizard_hourselect_selectedhours":
+        "Ore selezionate",
+    "cronwizard_dayselect_everyday":
+        "Ogni giorno",
+    "cronwizard_dayselect_selecteddays":
+        "Giorni selezionati",
+    "cronwizard_dayowselect_selecteddaysow":
+        "Giorni della settimana selezionati",
+    "cronwizard_monthselect_everymonth":
+        "Ogni mese",
+    "cronwizard_monthselect_selectedmonths":
+        "Mesi selezionati",
+    "cronwizard_bindings_define_types_and_modules":
+        "Definire tipi e moduli soggetti a questa pianificazione (opzionale)",
+    "cronwizard_bindings_select_types":
+        "Seleziona tipi",
+    "cronwizard_action_set_action_to_execute":
+        "Imposta l'azione da eseguire alle occorrenze di questo evento",
+    "cronwizard_action_preset_actions":
+        "Azioni preimpostate",
+    "cronwizard_action_preset_every_occurrence":
+        "Ad ogni occorrenza",
+    "cronwizard_action_preset_slot_start":
+        "All'inizio di una fascia oraria",
+    "cronwizard_action_preset_slot_end":
+        "Alla fine di una fascia oraria",
+    "cronwizard_action_custom_script":
+        "Script personalizzato",
+    "cronwizard_action_no_action":
+        "Nessuna azione",
+    "cronwizard_action_schedule_variable_hint":
+        "Utilizza <span class=\"color-primary\">@{{name}}</span> come variabile nelle espressioni cron o utilizza <span class=\"color-primary\">Scheduler.IsScheduling(\"@{{name}}\")</span> nei programmi di automazione per fare riferimento a questo evento.",
+" ":"--------------- PROGRAM EDITOR ------------------",
+  "save_and_build":
+    "Salva e compila",
+  "toggle_widgets_preview":
+    "Mostra/Nascondi anteprima widgets",
+  "stop_program":
+    "Interrompi programma",
+  "run_program":
+    "Esegui programma",
+  "program_status_added":
+    "Aggiunto",
+  "program_status_idle":
+    "Inattivo",
+  "program_status_running":
+    "In esecuzione",
+  "program_status_background":
+    "Background",
+  "program_status_stopped":
+    "Interrotto",
+  "program_status_disabled":
+    "Disabilitato",
+  "program_status_enabled":
+    "Abilitato",
+  "automation_programming_guide":
+    "Guida alla programmazione",
+  "tap_to_disable":
+    "Tocca per disabilitare",
+  "tap_to_enable":
+    "Tocca per abilitare",
+  "program_data":
+    "Dati programma",
+  "visual_code":
+    "Codice visuale",
+  "generated_code":
+    "Codice generato",
+  "setup_code":
+    "Setup",
+  "main_code":
+    "Main",
+  "main_code_empty_note":
+    "Il codice \"Main\" è vuoto.\n\nUsa l'editor di \"Codice visuale\" per generare questo codice:\n- Apri la categoria \"Programma\" dalla tavolozza dei comandi sulla sinistra\n- Trascina un blocco di tipo \"Main\" nell'area di lavoro del codice visuale\n- Aggiungi al suo interno altri blocchi di codice per implementare le azioni e la logica di questo programma\n\nIl programma \"Main\" può essere eseguito manualmente o avviato automaticamente sulla base delle condizioni eventualmente specificate nel codice \"Setup\".",
+  "setup_code_empty_note":
+    "Il codice \"Setup\" è vuoto.\n\nUsa l'editor di \"Codice visuale\" per generare questo codice:\n- Apri la categoria \"Programma\" dalla tavolozza dei comandi sulla sinistra\n- Trascina un blocco di tipo \"Setup\" nell'area di lavoro del codice visuale\n- Aggiungi al suo interno altri blocchi di codice per stabilire le condizioni che innescheranno l'avvio automatico del codice \"Main\"\n\nQuesto codice viene valutato ogni volta che si verifica un evento ed almeno una volta al minuto.",
+" ": "------------------------------------------",
+    "$options":
+    {
+
+      "6": {
+          "Title":
+              "Accendi tutte le luci",
+          "Description":
+              "Accende tutte le luci del gruppo specificato."
+      },
+
+      "7": {
+          "Title":
+              "Spegni tutte le luci",
+          "Description":
+              "Spegne tutte le luci del gruppo specificato."
+      },
+
+      "16": {
+        "Title":
+        "Memoria livello",
+        "Description":
+        "Memorizza e ripristina livello.",
+        "HomeGenie.LevelMemory":
+        "Ripristina l'ultimo livello all'accensione",
+        "HomeGenie.LevelMemory.SimulateOnly":
+        "Simula soltanto"
+      },
+
+      "34": {
+        "Title":
+        "OpenWeatherMap",
+        "Description":
+        "Informazioni meteo e previsioni dal servizio Open Weather Map.\nPer attivare questo widget inserisci una chiave API valida.\nSegui le istruzioni su https://openweathermap.org/appid per ottenere una chiave API gratuita.",
+        "ConfigureOptions.Location":
+        "Città",
+        "ConfigureOptions.Language":
+        "Lingua (es. EN, IT, FR, DE, ...)",
+        "ConfigureOptions.UpdateInterval":
+        "Intervallo aggiornamento (minuti)",
+        "ConfigureOptions.ApiKey":
+        "OpenWeatherMap API key (APPID)"
+      },
+
+      "78": {
+        "Title": "Smart Thermostat",
+        "Description": "Usa un qualsiasi sensore di temperatura e interruttore smart per implementare le funzionalità di un termostato.",
+        "VirtualThermostat.TemperatureModule": "Sensore di temperatura",
+        "VirtualThermostat.HeatingSwitchModule": "Interruttore Heating",
+        "VirtualThermostat.CoolingSwitchModule": "Interruttore Cooling",
+        "ConfigureOptions.ThermostatsCount": "Numero di termostati"
+      },
+
+      "81": {
+          "Title":
+              "Energy Monitor",
+          "Description":
+              "Generare statistiche sul consumo energetico e sull'utilizzo dei dispositivi.",
+          "EnergyManagement.MonitorStatus":
+              "Monitora stato",
+          "EnergyManagement.MonitorWatts":
+              "Monitora consumo energetico"
+      },
+
+      "82": {
+          "Title":
+              "Modalità risparmio energetico",
+          "Description":
+              "Mantiene il livello della luce al di sotto di una percentuale configurabile.",
+          "EnergyManagement.EnergySavingLevel":
+              "Livello massimo (%)",
+          "EnergyManagement.EnergySavingMode":
+              "Abilita"
+      },
+
+      "90": {
+          "Title":
+              "Sistema di allarme",
+          "Description":
+              "",
+          "HomeGenie.SecurityAlarm":
+              "Usa come allarme/strobo",
+          "HomeGenie.SecuritySensor":
+              "Usa come sensore di sicurezza",
+          "ConfigureOptions.Email.Recipients":
+              "Elenco separato da virgola di destinatari e-mail per le notifiche di allarme",
+          "ConfigureOptions.System.ArmDelay":
+              "Ritardo inserimento allarme (seconds)",
+          "ConfigureOptions.System.SirenStartTime":
+              "Ritardo sirene/strobo (secondi)",
+          "ConfigureOptions.System.SirenMaxTime":
+              "Tempo massimo sirene/strobo (secondi, 0=infinito)",
+          "ConfigureOptions.Trigger.ArmedProgram":
+              "Programma da eseguire quando l'allarme viene inserito",
+          "ConfigureOptions.Trigger.DisarmedProgram":
+              "Programma da eseguire quando l'allarme viene disinserito",
+          "ConfigureOptions.Trigger.TriggeredProgram":
+              "Programma da eseguire quando scatta l'allarme"
+      },
+
+      "95": {
+        "Title": "Log eventi",
+        "Description": "Registra attività del dispositivo.",
+        "EventsLogger.EnableLogging": "Abilita"
+      },
+
+      "400": {
+        "Title": "Demo Moduli Virtuali",
+        "Description": "Imposta manualmente i valori del dispositivo virtuale.",
+        "Sensor.Temperature": "Valore temperatura",
+        "Sensor.Luminance": "Valore luminosità",
+        "Sensor.MotionDetect": "Stato rilevamentto movimento",
+        "Status.Battery": "Livello batteria",
+        "Sensor.DoorWindow": "Stato sensore porta/finiestra (aperto/chiuso)",
+        "Status.Level": "Stato interruttore (acceso/spento)"
+      },
+
+      "401": {
+        "Title": "Demo - Porta aperta/chiusa",
+        "Description": "Simula apertura/chiusura porta del sensore porta-finestra demo."
+      },
+
+      "402": {
+        "Title": "Demo - Rileva movimento",
+        "Description": "Simula rilevamento movimento del multi-sensore demo."
+      },
+
+      "410": {
+        "Title": "Simulatore sensore",
+        "Description": "Genera valori sensore casuali.",
+        "Simulator.Sensor.Temperature": "Sensore temperatura",
+        "Simulator.Sensor.Humidity": "Sensore umidità",
+        "Simulator.Sensor.Luminance": "Sensore luce",
+        "Simulator.Meter.Watts": "Misuratore Watt",
+        "Simulator.Meter.Watts.Max": "Potenza massima Watt",
+        "Simulator.Sensor.DataFrequency": "Frequenza valori generati"
+      },
+
+      "505": {
+        "Title": "Telecomando",
+        "Description": "Controlla il dispositivo usando un telcomando (IR or RF).",
+        "HomeGenie.RemoteControl.Enable": "Abilita",
+        "HomeGenie.RemoteControl.IRCode": "Pulsante accendi/spegni",
+        "ConfigureOptions.DimmerUpCode": "Pulsante per aumentare luminosità",
+        "ConfigureOptions.DimmerDownCode": "Pulsante per diminuire luminosità",
+        "ConfigureOptions.DimmerInterval": "Incremento"
+      },
+
+      "145": {
+          "Title":
+              "Smart Device",
+          "Description":
+              "Accende/Spegne il dispositivo in base al movimento e alla luce ambientale.",
+          "HomeGenie.SmartLights.Enable":
+              "Abilita 'Smart Device'",
+          "HomeGenie.SmartLights.OnMotionDetect":
+              "Controlla con sensore movimento (opzionale)",
+          "HomeGenie.SmartLights.CheckLuminosity":
+              "Controlla con sensore luce (opzionale)",
+          "HomeGenie.SmartLights.SwitchOffTimeout":
+              "Spegni dopo un periodo di inattività (secondi)",
+          "HomeGenie.SmartLights.MinLuminance":
+              "Accendi se la luminosità è inferiore a"
+      },
+
+      "8": {
+          "Title":
+              "Scenario alba",
+          "Description":
+              "Scenario \"Alba\" di esempio per luci LED colorate.",
+          "Scenarios.SunriseColors":
+              "Collega a scenario Sunrise Colors"
+      }
+
+    }
+}

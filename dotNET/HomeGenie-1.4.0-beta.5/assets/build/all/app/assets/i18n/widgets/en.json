@@ -1,0 +1,14 @@
+{
+  "$alarm_system": {
+    "arm_home":
+      "Home",
+    "arm_away":
+      "Away"
+  },
+  "$section_label": {
+    "label":"Label",
+    "indicators": "Indicators",
+    "lights_control": "Lights",
+    "switches_control": "Switches"
+  }
+}

@@ -22,3 +22,12 @@
 [submodule "Java/Maven/app-java-demo"]
 	path = Java/Maven/app-java-demo
 	url = https://github.com/endorlabs/app-java-demo
+[submodule "dotNET/dotNET-ewok"]
+	path = dotNET/dotNET-ewok
+	url = https://github.com/endor-matt/dotNET-ewok
+[submodule "dotNET/MudBlazor"]
+	path = dotNET/MudBlazor
+	url = https://github.com/MudBlazor/MudBlazor
+[submodule "dotNET/ryujinx"]
+	path = dotNET/ryujinx
+	url = https://github.com/ryujinx/ryujinx

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProgramBlock xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProgramBlock>
+    <ScriptSetup>// Based .NET IoT Libraries
+// Documentation:
+//   https://learn.microsoft.com/en-us/dotnet/iot/intro
+// Device Bindings:
+//   https://github.com/dotnet/iot/blob/main/src/devices/README.md
+
+var gpio_pins = new string[]{
+	"GPIO17 (pin 11)=17",
+	"GPIO27 (pin 13)=27",
+	"GPIO22 (pin 15)=22",
+
+	"GPIO4 (pin 7)=4",
+	"GPIO5 (pin 29)=5",
+	"GPIO6 (pin 31)=6",
+	"GPIO13 (pin 33)=13",
+	"GPIO19 (pin 35)=19",
+	"GPIO26 (pin 37)=26",
+
+	"GPIO23 (pin 16)=23",
+	"GPIO24 (pin 18)=24",
+	"GPIO25 (pin 22)=25",
+
+	"GPIO12 (pin 32)=12",
+	"GPIO16 (pin 36)=16",
+//	"GPIO20 (pin 38)=20", // &lt;-- this pin seems to be used by the system
+	"GPIO21 (pin 40)=21"
+};
+
+Program.Setup(() =&gt; {
+	Program
+		.AddOption("GPIO.Pin", "", "Pin number", "select:" + string.Join(",", gpio_pins))
+		.AddOption("GPIO.Pin.Mode", "1", "Pin mode", "select:Output=1,Input=0,Input pull-down=2,Input pull-up=3");
+});
+Program.Run();
+</ScriptSetup>
+    <ScriptSource>// Based .NET IoT Libraries
+// Documentation:
+//   https://learn.microsoft.com/en-us/dotnet/iot/intro
+// Device Bindings:
+//   https://github.com/dotnet/iot/blob/main/src/devices/README.md
+
+// Restart when the Pin configuration changes
+When.ModuleParameterChanged((module, parameter) =&gt; {
+    if (module.Get().Instance == Program.Module &amp;&amp; parameter.Name.StartsWith("ConfigureOptions.GPIO.Pin"))
+    {
+        Program.Restart();
+    }
+    return true;
+});
+
+// Pin allocation/deallocation
+var notificationButtons = " [program_configure,program_disable]";
+var pinMode = (PinMode)Program.Option("GPIO.Pin.Mode").DecimalValue;
+int pin = (int)Program.Option("GPIO.Pin").DecimalValue;
+if (pin &lt;= 0) {
+    Program.Notify("GPIO pin not selected." + notificationButtons);
+    Pause(10);
+    return;
+}
+
+var moduleDomain = "RasperryPi.GPIO";
+var moduleAddress = pin.ToString();
+Program.AddModule(moduleDomain, moduleAddress, pinMode == PinMode.Output ? "Switch" : "Sensor");
+var mod = Modules
+    .InDomain(moduleDomain)
+    .WithAddress(moduleAddress).Get();
+
+using GpioController controller = new();
+
+// Pin-change event handler
+PinChangeEventHandler pinValueChangeHandler = (sender, pinChange) =&gt; {
+    var level = pinChange.ChangeType == PinEventTypes.Falling ? 0 : 1;
+    mod.Emit("Status.Level", level);
+};
+
+try
+{
+    controller.OpenPin(pin, pinMode);
+    controller.RegisterCallbackForPinValueChangedEvent(
+        pin,
+        PinEventTypes.Falling | PinEventTypes.Rising,
+        pinValueChangeHandler
+    );        
+} catch(Exception e) {
+    Program.Notify("Error opening GPIO " + pin + ": " + e.Message + notificationButtons);
+    Pause(10);
+    return;
+}
+
+if (pinMode == PinMode.Output)
+{
+    mod.Instance.DeviceType = ModuleTypes.Switch;
+    mod.Emit("Widget.DisplayModule", "homegenie/generic/switch");
+
+    var controlOn = new Action&lt;ModuleHelper&gt;((mod) =&gt; {
+        controller.Write(pin, PinValue.High);
+        mod.Emit("Status.Level", 1);
+    });
+    var controlOff = new Action&lt;ModuleHelper&gt;((mod) =&gt; {
+        controller.Write(pin, PinValue.Low);
+        mod.Emit("Status.Level", 0);
+    });
+
+    // Handle web service API
+    When.WebServiceCallReceived(moduleDomain + "/" + moduleAddress, (args) =&gt; {
+        var request = Program.ParseApiCall(args);
+        if (request.Command == "Control.Toggle") {
+            if (mod.Level == 0) {
+                controlOn(mod);
+            } else {
+                controlOff(mod);
+            }
+            return new ResponseStatus(Status.Ok);
+        }
+        if (request.Command == "Control.On") {
+            controlOn(mod);
+            return new ResponseStatus(Status.Ok);
+        }
+        if (request.Command == "Control.Off") {
+            controlOff(mod);
+            return new ResponseStatus(Status.Ok);
+        }
+        return null;
+    });
+}
+else
+{
+    mod.Instance.DeviceType = ModuleTypes.Sensor;
+    mod.Emit("Widget.DisplayModule", "homegenie/generic/sensor");
+}
+
+Program.GoBackground();
+</ScriptSource>
+    <ScriptErrors />
+    <PackageInfo>
+      <Repository>homegenie</Repository>
+      <PackageId>homegenie-iot-net</PackageId>
+      <PackageVersion>1.0.0</PackageVersion>
+      <Id>gpio-pin</Id>
+      <Version>1.0.0</Version>
+      <Required>false</Required>
+      <Checksum>0AFBB9E097E528D743ADB886F0EC5035</Checksum>
+    </PackageInfo>
+    <Domain>HomeAutomation.HomeGenie.Automation</Domain>
+    <Address>700</Address>
+    <Name>GPIO Pin v.2</Name>
+    <Description>Configurable GPIO pin as binary input sensor or output switch.
+(.NET IoT bindings)
+</Description>
+    <Group>Raspberry Pi</Group>
+    <Features />
+    <AutoRestartEnabled>false</AutoRestartEnabled>
+    <Cloneable>true</Cloneable>
+    <Type>CSharp</Type>
+    <IsEnabled>true</IsEnabled>
+  </ProgramBlock>
+</ArrayOfProgramBlock>
