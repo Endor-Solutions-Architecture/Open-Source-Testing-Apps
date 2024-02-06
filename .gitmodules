@@ -31,3 +31,21 @@
 [submodule "dotNET/ryujinx"]
 	path = dotNET/ryujinx
 	url = https://github.com/ryujinx/ryujinx
+[submodule "Java/Gradle/jmeter"]
+	path = Java/Gradle/jmeter
+	url = https://github.com/apache/jmeter
+[submodule "Go/copilot-gpt4-service"]
+	path = Go/copilot-gpt4-service
+	url = https://github.com/aaamoon/copilot-gpt4-service
+[submodule "JavaScript/npm/LibreChat"]
+	path = JavaScript/npm/LibreChat
+	url = https://github.com/danny-avila/LibreChat
+[submodule "Java/Maven/langchain4j"]
+	path = Java/Maven/langchain4j
+	url = https://github.com/langchain4j/langchain4j
+[submodule "Java/Gradle/OpenSearch"]
+	path = Java/Gradle/OpenSearch
+	url = https://github.com/opensearch-project/OpenSearch
+[submodule "Java/Maven/jenkins"]
+	path = Java/Maven/jenkins
+	url = https://github.com/jenkinsci/jenkins
