@@ -1,3 +1,24 @@
 [submodule "Java/Maven/hearts-github"]
 	path = Java/Maven/hearts-github
 	url = https://github.com/endorlabs/hearts-github
+[submodule "Java/Maven/webgoat"]
+	path = Java/Maven/webgoat
+	url = https://github.com/webgoat/webgoat
+[submodule "Java/Maven/biojava"]
+	path = Java/Maven/biojava
+	url = https://github.com/biojava/biojava
+[submodule "Python/baselines"]
+	path = Python/baselines
+	url = https://github.com/openai/baselines
+[submodule "Python/MetaGPT"]
+	path = Python/MetaGPT
+	url = https://github.com/geekan/MetaGPT
+[submodule "Python/changedetection.io"]
+	path = Python/changedetection.io
+	url = https://github.com/dgtlmoon/changedetection.io
+[submodule "Python/Resume-Matcher"]
+	path = Python/Resume-Matcher
+	url = https://github.com/srbhr/Resume-Matcher
+[submodule "Java/Maven/app-java-demo"]
+	path = Java/Maven/app-java-demo
+	url = https://github.com/endorlabs/app-java-demo
