@@ -55,3 +55,12 @@
 [submodule "Java/Gradle/conductor"]
 	path = Java/Gradle/conductor
 	url = https://github.com/conductor-oss/conductor
+[submodule "PHP/joomla-platform"]
+	path = PHP/joomla-platform
+	url = https://github.com/joomla/joomla-platform
+[submodule "PHP/joomla-cms"]
+	path = PHP/joomla-cms
+	url = https://github.com/joomla/joomla-cms
+[submodule "PHP/Twig"]
+	path = PHP/Twig
+	url = https://github.com/twigphp/Twig
